@@ -1,0 +1,19 @@
+chain:
+  name: "bsc"
+  chain_id: 56
+  block_time_seconds: 3
+  rpc_url: "${BSC_RPC_URL}"
+  alchemy_api_key: "${ALCHEMY_BSC_API_KEY}"
+
+known_contracts:
+  dex:
+    pancakeswap_v2_factory: "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73"
+    pancakeswap_v3_factory: "0x0BFbCF9fa4f9C56B0F40a671Ad40E0805A091865"
+  lending:
+    venus_comptroller: "0xfD36E2c2a6789Db23113685031d7F16329158384"
+  flash_loan:
+    pancakeswap: "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73"
+
+events:
+  transfer: "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+  swap_v2: "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822"

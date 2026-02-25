@@ -1,0 +1,25 @@
+chain:
+  name: "ethereum"
+  chain_id: 1
+  block_time_seconds: 12
+  rpc_url: "${ETHEREUM_RPC_URL}"
+  alchemy_api_key: "${ALCHEMY_API_KEY}"
+
+known_contracts:
+  dex:
+    uniswap_v2_factory: "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f"
+    uniswap_v3_factory: "0x1F98431c8aD98523631AE4a59f267346ea31F984"
+    sushiswap_factory: "0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac"
+  lending:
+    aave_v2_pool: "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9"
+    aave_v3_pool: "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2"
+    compound_v2_comptroller: "0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B"
+  flash_loan:
+    aave_v2: "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9"
+    dydx_solo: "0x1E0447b19BB6EcFdAe1e4AE1694b0C3659614e4e"
+
+events:
+  transfer: "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+  swap_v2: "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822"
+  swap_v3: "0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67"
+  flash_loan: "0x631042c832b07452973831137f2d73e395028b44b250dedc5abb0ee66f83ade2"
