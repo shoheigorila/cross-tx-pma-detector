@@ -20,3 +20,4 @@ data/checkpoints/
 notebooks/.ipynb_checkpoints/
 
 wandb/
+.DS_Store
